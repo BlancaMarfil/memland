@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		273C88412013DCAE59615F59 /* Pods_MemLand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C6E44C320D2B7AF94DECA /* Pods_MemLand.framework */; };
+		C6218A6B2786256500A7F29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6218A6A2786256500A7F29B /* AppDelegate.swift */; };
+		C6218A6D2786256500A7F29B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6218A6C2786256500A7F29B /* SceneDelegate.swift */; };
+		C6218A6F2786256500A7F29B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6218A6E2786256500A7F29B /* SearchViewController.swift */; };
+		C6218A722786256500A7F29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6218A702786256500A7F29B /* Main.storyboard */; };
+		C6218A752786256500A7F29B /* MemLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6218A732786256500A7F29B /* MemLand.xcdatamodeld */; };
+		C6218A772786257000A7F29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6218A762786257000A7F29B /* Assets.xcassets */; };
+		C6218A7A2786257000A7F29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6218A782786257000A7F29B /* LaunchScreen.storyboard */; };
+		C657902127A3244F00D4889B /* ChooseLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902027A3244F00D4889B /* ChooseLanguageViewController.swift */; };
+		C657902327A5D7E700D4889B /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902227A5D7E700D4889B /* LanguageModel.swift */; };
+		C657902527A6CB3C00D4889B /* LanguageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902427A6CB3C00D4889B /* LanguageListViewController.swift */; };
+		C657902727AB0FFC00D4889B /* ChooseProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902627AB0FFC00D4889B /* ChooseProjectViewController.swift */; };
+		C657902927AC6E2E00D4889B /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902827AC6E2E00D4889B /* ProjectModel.swift */; };
+		C657902D27B0008B00D4889B /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902C27B0008A00D4889B /* ModelManager.swift */; };
+		C657902F27B05F7300D4889B /* TranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657902E27B05F7200D4889B /* TranslationModel.swift */; };
+		C657903227B44F2F00D4889B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903127B44F2F00D4889B /* HistoryViewController.swift */; };
+		C657903527B4527500D4889B /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903327B4527500D4889B /* HistoryCell.swift */; };
+		C657903627B4527500D4889B /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C657903427B4527500D4889B /* HistoryCell.xib */; };
+		C657903827B8428700D4889B /* WordHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903727B8428600D4889B /* WordHistoryViewController.swift */; };
+		C657903A27B98C4000D4889B /* WordHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903927B98C3E00D4889B /* WordHistoryCollectionViewCell.swift */; };
+		C657903C27BC315300D4889B /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903B27BC315200D4889B /* ProjectCollectionViewCell.swift */; };
+		C657903E27BC330700D4889B /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903D27BC330600D4889B /* ProjectsViewController.swift */; };
+		C657904027BC3A9E00D4889B /* ProjectWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657903F27BC3A9D00D4889B /* ProjectWordsViewController.swift */; };
+		C657904227C1230200D4889B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657904127C1230100D4889B /* Extensions.swift */; };
+		C6A80BA3278CB2DB0085DFD6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A80BA2278CB2DB0085DFD6 /* Constants.swift */; };
+		C6A80BA8278F60510085DFD6 /* DictionaryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A80BA7278F60510085DFD6 /* DictionaryManager.swift */; };
+		C6A80BAA2795FB8A0085DFD6 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A80BA92795FB8A0085DFD6 /* WordModel.swift */; };
+		C6A80BAC2795FBF30085DFD6 /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A80BAB2795FBF30085DFD6 /* WordData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F61B24A1488FA69451C388B /* Pods-MemLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemLand.release.xcconfig"; path = "Target Support Files/Pods-MemLand/Pods-MemLand.release.xcconfig"; sourceTree = "<group>"; };
+		781C6E44C320D2B7AF94DECA /* Pods_MemLand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemLand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94326CA336354F8DA06A8B56 /* Pods-MemLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemLand.debug.xcconfig"; path = "Target Support Files/Pods-MemLand/Pods-MemLand.debug.xcconfig"; sourceTree = "<group>"; };
+		C6218A672786256500A7F29B /* MemLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6218A6A2786256500A7F29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6218A6C2786256500A7F29B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6218A6E2786256500A7F29B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C6218A712786256500A7F29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6218A742786256500A7F29B /* MemLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemLand.xcdatamodel; sourceTree = "<group>"; };
+		C6218A762786257000A7F29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6218A792786257000A7F29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6218A7B2786257000A7F29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C657902027A3244F00D4889B /* ChooseLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLanguageViewController.swift; sourceTree = "<group>"; };
+		C657902227A5D7E700D4889B /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		C657902427A6CB3C00D4889B /* LanguageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageListViewController.swift; sourceTree = "<group>"; };
+		C657902627AB0FFC00D4889B /* ChooseProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseProjectViewController.swift; sourceTree = "<group>"; };
+		C657902827AC6E2E00D4889B /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		C657902C27B0008A00D4889B /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		C657902E27B05F7200D4889B /* TranslationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationModel.swift; sourceTree = "<group>"; };
+		C657903127B44F2F00D4889B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C657903327B4527500D4889B /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		C657903427B4527500D4889B /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		C657903727B8428600D4889B /* WordHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordHistoryViewController.swift; sourceTree = "<group>"; };
+		C657903927B98C3E00D4889B /* WordHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C657903B27BC315200D4889B /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		C657903D27BC330600D4889B /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		C657903F27BC3A9D00D4889B /* ProjectWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectWordsViewController.swift; sourceTree = "<group>"; };
+		C657904127C1230100D4889B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6A80BA2278CB2DB0085DFD6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6A80BA7278F60510085DFD6 /* DictionaryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryManager.swift; sourceTree = "<group>"; };
+		C6A80BA92795FB8A0085DFD6 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		C6A80BAB2795FBF30085DFD6 /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6218A642786256500A7F29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273C88412013DCAE59615F59 /* Pods_MemLand.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3EC59CEF43318EDCE80E50C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781C6E44C320D2B7AF94DECA /* Pods_MemLand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6218A5E2786256400A7F29B = {
+			isa = PBXGroup;
+			children = (
+				C6218A692786256500A7F29B /* MemLand */,
+				C6218A682786256500A7F29B /* Products */,
+				FE97E99A637EDAD9FF10DCF8 /* Pods */,
+				B3EC59CEF43318EDCE80E50C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6218A682786256500A7F29B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6218A672786256500A7F29B /* MemLand.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6218A692786256500A7F29B /* MemLand */ = {
+			isa = PBXGroup;
+			children = (
+				C6218A6A2786256500A7F29B /* AppDelegate.swift */,
+				C6218A6C2786256500A7F29B /* SceneDelegate.swift */,
+				C6A80BA6278F60220085DFD6 /* Model */,
+				C6A80BA4278E10CC0085DFD6 /* Views */,
+				C6A80BA5278E10F10085DFD6 /* Controllers */,
+				C6218A762786257000A7F29B /* Assets.xcassets */,
+				C6A80BA2278CB2DB0085DFD6 /* Constants.swift */,
+				C6218A782786257000A7F29B /* LaunchScreen.storyboard */,
+				C6218A7B2786257000A7F29B /* Info.plist */,
+				C6218A732786256500A7F29B /* MemLand.xcdatamodeld */,
+			);
+			path = MemLand;
+			sourceTree = "<group>";
+		};
+		C657903027B44EFC00D4889B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				C657902827AC6E2E00D4889B /* ProjectModel.swift */,
+				C657902E27B05F7200D4889B /* TranslationModel.swift */,
+				C657902C27B0008A00D4889B /* ModelManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		C6A80BA4278E10CC0085DFD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6218A702786256500A7F29B /* Main.storyboard */,
+				C657903327B4527500D4889B /* HistoryCell.swift */,
+				C657903427B4527500D4889B /* HistoryCell.xib */,
+				C657903927B98C3E00D4889B /* WordHistoryCollectionViewCell.swift */,
+				C657903B27BC315200D4889B /* ProjectCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6A80BA5278E10F10085DFD6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6218A6E2786256500A7F29B /* SearchViewController.swift */,
+				C657902027A3244F00D4889B /* ChooseLanguageViewController.swift */,
+				C657902427A6CB3C00D4889B /* LanguageListViewController.swift */,
+				C657902627AB0FFC00D4889B /* ChooseProjectViewController.swift */,
+				C657903127B44F2F00D4889B /* HistoryViewController.swift */,
+				C657903727B8428600D4889B /* WordHistoryViewController.swift */,
+				C657903D27BC330600D4889B /* ProjectsViewController.swift */,
+				C657903F27BC3A9D00D4889B /* ProjectWordsViewController.swift */,
+				C657904127C1230100D4889B /* Extensions.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6A80BA6278F60220085DFD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6A80BA7278F60510085DFD6 /* DictionaryManager.swift */,
+				C6A80BA92795FB8A0085DFD6 /* WordModel.swift */,
+				C6A80BAB2795FBF30085DFD6 /* WordData.swift */,
+				C657902227A5D7E700D4889B /* LanguageModel.swift */,
+				C657903027B44EFC00D4889B /* Realm */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE97E99A637EDAD9FF10DCF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94326CA336354F8DA06A8B56 /* Pods-MemLand.debug.xcconfig */,
+				2F61B24A1488FA69451C388B /* Pods-MemLand.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6218A662786256500A7F29B /* MemLand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6218A7E2786257000A7F29B /* Build configuration list for PBXNativeTarget "MemLand" */;
+			buildPhases = (
+				103FEF1BE1B70DA967B62FBA /* [CP] Check Pods Manifest.lock */,
+				C6218A632786256500A7F29B /* Sources */,
+				C6218A642786256500A7F29B /* Frameworks */,
+				C6218A652786256500A7F29B /* Resources */,
+				C9B913800E8D04749D036D6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemLand;
+			productName = MemLand;
+			productReference = C6218A672786256500A7F29B /* MemLand.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6218A5F2786256400A7F29B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C6218A662786256500A7F29B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = C6218A622786256400A7F29B /* Build configuration list for PBXProject "MemLand" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6218A5E2786256400A7F29B;
+			productRefGroup = C6218A682786256500A7F29B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6218A662786256500A7F29B /* MemLand */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6218A652786256500A7F29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6218A7A2786257000A7F29B /* LaunchScreen.storyboard in Resources */,
+				C6218A772786257000A7F29B /* Assets.xcassets in Resources */,
+				C657903627B4527500D4889B /* HistoryCell.xib in Resources */,
+				C6218A722786256500A7F29B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		103FEF1BE1B70DA967B62FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemLand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B913800E8D04749D036D6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemLand/Pods-MemLand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemLand/Pods-MemLand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemLand/Pods-MemLand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6218A632786256500A7F29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C657904227C1230200D4889B /* Extensions.swift in Sources */,
+				C657903C27BC315300D4889B /* ProjectCollectionViewCell.swift in Sources */,
+				C657902927AC6E2E00D4889B /* ProjectModel.swift in Sources */,
+				C6A80BA3278CB2DB0085DFD6 /* Constants.swift in Sources */,
+				C657902D27B0008B00D4889B /* ModelManager.swift in Sources */,
+				C6218A6F2786256500A7F29B /* SearchViewController.swift in Sources */,
+				C6218A6B2786256500A7F29B /* AppDelegate.swift in Sources */,
+				C657903E27BC330700D4889B /* ProjectsViewController.swift in Sources */,
+				C657903827B8428700D4889B /* WordHistoryViewController.swift in Sources */,
+				C657904027BC3A9E00D4889B /* ProjectWordsViewController.swift in Sources */,
+				C6218A752786256500A7F29B /* MemLand.xcdatamodeld in Sources */,
+				C657903527B4527500D4889B /* HistoryCell.swift in Sources */,
+				C6218A6D2786256500A7F29B /* SceneDelegate.swift in Sources */,
+				C657903227B44F2F00D4889B /* HistoryViewController.swift in Sources */,
+				C6A80BAA2795FB8A0085DFD6 /* WordModel.swift in Sources */,
+				C657902527A6CB3C00D4889B /* LanguageListViewController.swift in Sources */,
+				C657902127A3244F00D4889B /* ChooseLanguageViewController.swift in Sources */,
+				C6A80BA8278F60510085DFD6 /* DictionaryManager.swift in Sources */,
+				C657903A27B98C4000D4889B /* WordHistoryCollectionViewCell.swift in Sources */,
+				C657902727AB0FFC00D4889B /* ChooseProjectViewController.swift in Sources */,
+				C6A80BAC2795FBF30085DFD6 /* WordData.swift in Sources */,
+				C657902F27B05F7300D4889B /* TranslationModel.swift in Sources */,
+				C657902327A5D7E700D4889B /* LanguageModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6218A702786256500A7F29B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6218A712786256500A7F29B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6218A782786257000A7F29B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6218A792786257000A7F29B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6218A7C2786257000A7F29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6218A7D2786257000A7F29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6218A7F2786257000A7F29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94326CA336354F8DA06A8B56 /* Pods-MemLand.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemLand/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blancamarfil.MemLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6218A802786257000A7F29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F61B24A1488FA69451C388B /* Pods-MemLand.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemLand/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blancamarfil.MemLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6218A622786256400A7F29B /* Build configuration list for PBXProject "MemLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6218A7C2786257000A7F29B /* Debug */,
+				C6218A7D2786257000A7F29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6218A7E2786257000A7F29B /* Build configuration list for PBXNativeTarget "MemLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6218A7F2786257000A7F29B /* Debug */,
+				C6218A802786257000A7F29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C6218A732786256500A7F29B /* MemLand.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C6218A742786256500A7F29B /* MemLand.xcdatamodel */,
+			);
+			currentVersion = C6218A742786256500A7F29B /* MemLand.xcdatamodel */;
+			path = MemLand.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C6218A5F2786256400A7F29B /* Project object */;
+}
